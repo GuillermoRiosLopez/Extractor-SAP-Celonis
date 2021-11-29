@@ -1,0 +1,10 @@
+<service>
+    <id>celonis-ibc-sap</id>
+    <name>CelonisIBCSap</name>
+    <description>SAP ERP extractor of the Celonis IBC</description>
+    <executable>java</executable>
+    <workingdirectory>%BASE%</workingdirectory>
+    <arguments>-Xmx8g -Djava.io.tmpdir="%BASE%\temp" -jar connector-sap.jar</arguments>
+    <logmode>rotate</logmode>
+    <logpath>%BASE%\logs</logpath>
+</service>

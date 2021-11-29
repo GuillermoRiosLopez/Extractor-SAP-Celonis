@@ -1,0 +1,9 @@
+<service>
+    <id>celonis-ibc-sap-snc</id>
+    <name>CelonisIBCSapSNC</name>
+    <description>SAP ERP (SNC) extractor of the Celonis IBC</description>
+    <executable>start_with_snc.bat</executable>
+	<workingdirectory>%BASE%</workingdirectory>
+    <logmode>rotate</logmode>
+    <logpath>%BASE%\logs</logpath>
+</service>
